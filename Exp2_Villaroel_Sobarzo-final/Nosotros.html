@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="javascript.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel ="stylesheet" href="https://www.flaticon.es/iconos-gratis/jardineria"></link>
+  <title>Sobre Nosotros</title>
+  <link rel="icon" type="image/x-icon" href="img/planta.png">
+</head>
+<body class="body3">
+    <!--Inicio del menu responsive-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#opciones">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="#">
+          <img src="img/planta.png" width="30px" height="30px">
+      </a>
+
+      <div class="collapse navbar-collapse" id="opciones">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="Inicio.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Productos.html">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formulario.html">CONTÁCTANOS</a>
+            </li>
+
+
+          </ul>
+      </div>
+      <div class="buscador">
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+  </nav><!--cierre de menú-->
+    <style>
+
+      .main1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+      }
+      
+      
+      
+      html {
+        box-sizing: border-box;
+      }
+      
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+      
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+        border-radius: 30px;
+        margin-right: 30px;
+      }
+      
+      .about-section {
+        font-family:sans-serif;
+        padding: 50px;
+        margin: 20px;
+        text-align: center;
+        background-color: #030520;
+        color: white;
+      }
+      
+      .container {
+        padding: 0 16px;
+      }
+      
+      .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .title {
+        color: grey;
+      }
+      
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      
+      .button:hover {
+        background-color: #555;
+      }
+      
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+      .img5 {
+        border-radius: 30px;
+        margin-right: 30px;
+
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 6px;
+      }
+
+      </style>
+      <body>
+        
+
+
+        
+
+        
+        
+      
+      <div class="about-section">
+        
+        <h1>Sobre Nosotros.</h1>
+        <p>Somos un grupo de estudiantes de DUOC UC. Estudiamos la carrera de analista programador computacional específicamente en este caso la malla de desarrollo web la cual nos solicitó una página web relacionada a la jardinería. Se nos pide la construcción de una aplicación web que permita a sus usuarios elaborar listas de compras con la intención de permitir a los vecinos ordenar sus presupuestos, mejorar finanzas, realizar el aporte a la fundación sin fines de lucro y mejorar la venta y despacho de sus productos.</p>
+        <p>About Us.</p>
+        <a href="formulario.html" class="boton-unico">Contactanos</a>
+
+      </div>
+      
+      <h2 style="text-align:center">Expectativas</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img class="img5" src="img/maceta_nosotros.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Nuestra Mision</h2>
+              <p>Nuestra Mision es poder atender y gestionar mediante una pagina web a los clientes con la mayor facilidad, ofreciendo productos de la categoria
+                de Jardineria, todo esto para ayudar a una fundacion sin lucro.  </p>
+              <p><button class="button">Ver Más</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img class="img5" src="img/plantas_nosotros.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2>Nuestra Visión</h2>
+              <p>Esperamos llegar a un grupo mas aplio de personas mediante una pagina web que se especializa en ventas de productos de jardineria.
+                Con el fin de poder satisfascer las necesidades de las personas y poder ayudar a la fundación sin fines de lucro.</p>
+              <p><button class="button">Ver Más</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img class="img5" src="img/grupo_estudiante_nosotros.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Nosotros</h2>
+              <p> Nuestro Grupo de trabajo es conformado por dos estudiantes de la Instituición Duoc Uc, que se especializan en el area de Informatica.
+                Nuestra meta es poder especializarnos en el area de Programación Web.
+              </p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="main1">
+        <h2>Video Demostración</h2>
+        <h5>Articulos Jardineria, Marzo 25, 2023.</h5>
+        <div class="fakeimg" >
+            <div class="container-video">
+              <iframe src="https://www.youtube.com/embed/g2YJnn0laME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+
+
+      
+      <div class="main1">
+        <h2>Nuestra Institucion</h2>
+        <h5>marzo 25, 2023.</h5>
+        <p>El proyecto educativo de Duoc UC que ofrece una formación cristiana e integral, permite a sus estudiantes desarrollar al máximo sus capacidades, competencias y valores, convirtiéndolos en mejores personas y en profesionales preparados para insertarse en la sociedad global.
+
+          La ruta de excelencia que quiere seguir Duoc UC está marcada por la educación centrada en las personas, el aporte al desarrollo del país, la vinculación con el medio y la búsqueda constante de transformación social.</p>
+        <br>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Footer-->
+
+    <footer id="footer" class="footer">
+      <div class="container">  <!--Los contenedores proporcionan un medio para centrar y rellenar horizontalmente el contenido de la pag-->
+        <div class="row gy-3">
+          <div class="img1">
+            <figure>
+                <img src="img/planta.png" width="50px" height="50px">
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex">            <!--d-flex Gestiona el dineño, alineacion y tamaño de las columnas de la cuadricula.-->
+            <div>
+              <h4>Dirección</h4>
+              <p>
+                  Av. Esq. Blanca 501 <br>
+                  Maipú, Región Metropolitana<br>
+              </p>
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+            <div>
+              <h4>Contáctanos</h4>
+              <p>
+                <strong>Telefono:</strong> +56916238460<br>  <!-- (STRONG) se usa para definir texto con gran importancia y lo muestra en negrita-->
+                <strong>Correo:</strong> re.sobarzo@duocuc.cl<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Siguenos</h4>
+            <div class="social-links d-flex">
+              <a href="https://twitter.com/home?lang=es" class="twitter"><i class="fa fa-twitter"></i></a>     
+              <a href="https://web.facebook.com/?_rdc=1&_rdr" class="facebook"><i class="fa fa-facebook"></i></a>        <!-- Nos indica un icono   -->
+              <a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://cl.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Duoc UC</span></strong>. Todos los derechos reservados.
+        </div>
+        <div class="credits">Diseñado con <a href="https://www.w3schools.com">w3schools</a>
+        </div>
+      </div>
+  
+    </footer>
+
+
+    <!--fin del footer-->    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+
+
+
+</body>
+</html>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+
+
+
+
+
+</body>
+</html>
