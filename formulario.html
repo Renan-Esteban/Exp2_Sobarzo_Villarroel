@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Formulario</title>
+    <link rel="icon" type="image/x-icon" href="img/planta.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#opciones">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+            <img src="img/planta.png" width="30px" height="30px">
+        </a>
+
+        <div class="collapse navbar-collapse" id="opciones">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Inicio.html">INICIO</a>        
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Nosotros.html">NOSOTROS</a>            <!--nav-link Menús desplegables en su barra de navegación-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Productos.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="formulario.html">CONTÁCTANOS</a>
+              </li>
+
+            </ul>
+        </div>
+        <div class="buscador">
+          <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container1">
+        <h1>Contáctanos</h1>
+      <form id="contacto-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required><br>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
+        
+        <label for="opciones">Interés:</label>
+        <select id="opciones" name="opciones" required>
+          <option value="">--Seleccione su Interés--</option>
+          <option value="comentarios">Comentarios</option>
+          <option value="preguntas">Preguntas</option>
+          <option value="sugerencias">Sugerencias</option>
+        </select><br>
+        
+        <input type="submit" value="Enviar">
+        <a href="Inicio.html" class="boton-unico">Inicio</a>
+      </form>
+      </div>
+      <br>
+
+      <footer id="footer" class="footer">
+        <div class="container">  <!--Los contenedores proporcionan un medio para centrar y rellenar horizontalmente el contenido de la pag-->
+          <div class="row gy-3">
+            <div class="img1">
+              <figure>
+                  <img src="img/planta.png" width="50px" height="50px">
+              </figure>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex">            <!--d-flex Gestiona el dineño, alineacion y tamaño de las columnas de la cuadricula.-->
+              <div>
+                <h4>Dirección</h4>
+                <p>
+                    Av. Esq. Blanca 501 <br>
+                    Maipú, Región Metropolitana<br>
+                </p>
+              </div>
+    
+            </div>
+    
+            <div class="col-lg-3 col-md-6 footer-links d-flex">
+              <div>
+                <h4>Contáctanos</h4>
+                <p>
+                  <strong>Telefono:</strong> +56916238460<br>  <!-- (STRONG) se usa para definir texto con gran importancia y lo muestra en negrita-->
+                  <strong>Correo:</strong> re.sobarzo@duocuc.cl<br>
+                </p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Siguenos</h4>
+              <div class="social-links d-flex">
+                <a href="https://twitter.com/home?lang=es" class="twitter"><i class="fa fa-twitter"></i></a>     
+                <a href="https://web.facebook.com/?_rdc=1&_rdr" class="facebook"><i class="fa fa-facebook"></i></a>        <!-- Nos indica un icono   -->
+                <a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://cl.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="container2">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Duoc UC</span></strong>. Todos los derechos reservados.
+          </div>
+          <div class="credits">Diseñado con <a href="https://www.w3schools.com">w3schools</a>
+          </div>
+        </div>
+    
+      </footer>
+
+
+
+
+
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    
+    
+</body>
+</html>

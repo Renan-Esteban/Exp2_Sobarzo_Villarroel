@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="html6" lang="es">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  <!--Link para invocar los iconos-->
+    <title >Productos</title>
+    <link rel="icon" type="image/x-icon" href="img/planta.png">
+</head>
+<body class="body6">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#opciones">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+            <img src="img/planta.png" width="30px" height="30px">
+        </a>
+
+        <div class="collapse navbar-collapse" id="opciones">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Inicio.html">INICIO</a>        
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Nosotros.html">NOSOTROS</a>            <!--nav-link Menús desplegables en su barra de navegación-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Productos.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="formulario.html">CONTÁCTANOS</a>
+              </li>
+
+            </ul>
+        </div>
+        <div class="buscador">
+          <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <style>
+
+      
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+
+body{
+   background: #eee;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:3rem 2rem;
+}
+
+
+.container .title{
+   font-size: 3.5rem;
+   color:#444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+
+.container .products-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:2rem;
+}
+
+
+.container .products-container .product{
+   text-align: center;
+   padding:3rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+
+.container .products-container .product:hover{
+   outline: .2rem solid #222;
+   outline-offset: 0;
+}
+
+
+.container .products-container .product img{
+   height: 25rem;
+}
+
+
+.container .products-container .product:hover img{
+   transform: scale(.9);
+}
+
+
+.container .products-container .product h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   color:#444;
+}
+
+
+.container .products-container .product:hover h3{
+   color:#27ae60;
+}
+
+
+.container .products-container .product .price{
+   font-size: 2rem;
+   color:#444;
+}
+
+.img1 {
+  margin-right: 50px;
+
+}
+
+
+
+
+
+
+    </style>
+
+
+    <!-- product section start -->
+
+
+    <div class="container">
+
+
+      <h3 class="title"> Productos </h3>
+   
+      <div class="products-container">
+   
+         <div class="product" data-name="p-1">
+            <img src="img/lampara_solar.jpg" alt="Faroles">
+            <h3>Pack 4 Faroles de Jardin</h3>
+            <div class="price">$5.990</div>
+            <a href="#" class="btn btn-dark">Comprar</a>
+         </div>
+   
+         <div class="product" data-name="p-2">
+            <img src="img/carretillaverde.jpg" alt="Carretilla">
+            <h3>Carretilla Aluminio</h3>
+            <div class="price">$29.900</div>
+            <a href="#" class="btn btn-dark">Comprar</a>
+
+         </div>
+   
+         <div class="product" data-name="p-3">
+            <img src="img/fertilizantes.jpg" alt="Fertilizantes">
+            <h3>Fertilizante Organico 5L.</h3>
+            <div class="price">$14.990</div>
+            <a href="#" class="btn btn-dark">Comprar</a>
+         </div>
+   
+         <div class="product" data-name="p-4">
+            <img src="img/Hortalizas-antiguas-Organico-Kit-regalo-de-semillas-con-3-variedades-de-verduras-historicas-1000px.jpg" alt="Semillas">
+            <h3>Kit Semillas Hortalizas</h3>
+            <div class="price">$4.990</div>
+            <a href="#" class="btn btn-dark">Comprar</a>
+         </div>
+   
+         <div class="product" data-name="p-5">
+            <img src="img/D_NQ_NP_636139-MLC44964571839_022021-O.jpg" alt="kit herramientas">
+            <h3>Kit Herramientas 8pz. + Bolsito</h3>
+            <div class="price">$2.00</div>
+            <a href="#" class="btn btn-dark">Comprar</a>
+         </div>
+   
+         <div class="product" data-name="p-6">
+            <img src="img/maceteros_prod.jpg" alt="Maceteros">
+            <h3>Maceteros Distintos Tamaños</h3>
+            <div class="price">$2.990 hasta $9.990</div>
+            <a href="#" class="btn btn-dark">Comprar</a>
+         </div>
+
+
+         <div class="product" data-name="p-7">
+          <img src="img/tierra_hoja_prod.jpg" alt="Tierra de Hoja">
+          <h3>Tierra De Hojas 15L.</h3>
+          <div class="price">$4.990</div>
+          <a href="#" class="btn btn-dark">Comprar</a>
+       </div>
+
+
+       <div class="product" data-name="p-8">
+        <img src="img/regadera_prod.jpg" alt="Regadera de Jardin">
+        <h3>Regadera Aluminio 5L.</h3>
+        <div class="price">$4.990</div>
+        <a href="#" class="btn btn-dark">Comprar</a>
+     </div>
+
+
+     <div class="product" data-name="p-9">
+      <img src="img/herramientas_basicas_prod.jpg" alt="Kit Herramientas">
+      <h3>Kit Herramienta Basicas 4Pz.</h3>
+      <div class="price">$6.990</div>
+      <a href="#" class="btn btn-dark">Comprar</a>
+   </div>
+   
+      </div>
+   
+   </div>
+   
+  
+
+   
+
+
+
+
+
+
+
+
+
+        <!--Footer-->
+
+        <footer id="footer" class="footer">
+          <div class="container">  <!--Los contenedores proporcionan un medio para centrar y rellenar horizontalmente el contenido de la pag-->
+            <div class="row gy-3">
+              <div class="img1">
+                <figure>
+                    <img src="img/planta.png" width="50px" height="50px">
+                </figure>
+              </div>
+
+              <div class="col-lg-3 col-md-6 d-flex">            <!--d-flex Gestiona el dineño, alineacion y tamaño de las columnas de la cuadricula.-->
+                <div>
+                  <h4>Dirección</h4>
+                  <p>
+                      Av. Esq. Blanca 501 <br>
+                      Maipú, Región Metropolitana<br>
+                  </p>
+                </div>
+      
+              </div>
+      
+              <div class="col-lg-3 col-md-6 footer-links d-flex">
+                <div>
+                  <h4>Contáctanos</h4>
+                  <p>
+                    <strong>Telefono:</strong> +56916238460<br>  <!-- (STRONG) se usa para definir texto con gran importancia y lo muestra en negrita-->
+                    <strong>Correo:</strong> re.sobarzo@duocuc.cl<br>
+                  </p>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Siguenos</h4>
+                <div class="social-links d-flex">
+                  <a href="https://twitter.com/home?lang=es" class="twitter"><i class="fa fa-twitter"></i></a>     
+                  <a href="https://web.facebook.com/?_rdc=1&_rdr" class="facebook"><i class="fa fa-facebook"></i></a>        <!-- Nos indica un icono   -->
+                  <a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+                  <a href="https://cl.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="container">
+            <div class="copyright">
+              &copy; Copyright <strong><span>Duoc UC</span></strong>. Todos los derechos reservados.
+            </div>
+            <div class="credits">Diseñado con <a href="https://www.w3schools.com">w3schools</a>
+            </div>
+          </div>
+      
+        </footer>
+    
+    
+        <!--fin del footer-->
+       <!-- font awesome cdn link  -->
+
+
+      
+   
+
+
+   <!-- custom js file link  -->
+   <script src="js/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+
+
+
+
+
+
+</body>
+</html>
